@@ -1,8 +1,10 @@
-package main
+package solution
 
-// https://pkg.go.dev/github.com/kyokomi/emoji/v2
-import "github.com/kyokomi/emoji/v2"
+import (
+	// https://pkg.go.dev/github.com/kyokomi/emoji/v2
+	"github.com/kyokomi/emoji/v2"
+)
 
-func main() {
-	emoji.Println("Hello :world_map:!")
+func GetMessage() string {
+	return emoji.Sprint("Hello :world_map:!")
 }
